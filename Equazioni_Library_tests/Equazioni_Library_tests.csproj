@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E5E59A48-E48B-4E84-81AD-1D90DF9EF669}</ProjectGuid>
+    <ProjectGuid>{B272C166-51DA-483F-95F1-C7F7AF665A99}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EquazioniLibrary_test</RootNamespace>
-    <AssemblyName>EquazioniLibrary_test</AssemblyName>
+    <RootNamespace>Equazioni_Library_tests</RootNamespace>
+    <AssemblyName>Equazioni_Library_tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,16 +49,15 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Equazioni_test.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitTest1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EquazioniLibrary\EquazioniLibrary.csproj">
-      <Project>{360ea29f-2048-41fb-9f84-cce35470f822}</Project>
+      <Project>{360EA29F-2048-41FB-9F84-CCE35470F822}</Project>
       <Name>EquazioniLibrary</Name>
     </ProjectReference>
   </ItemGroup>

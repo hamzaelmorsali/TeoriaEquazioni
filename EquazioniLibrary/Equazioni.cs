@@ -20,6 +20,27 @@ namespace EquazioniLibrary
             return true;
 
         }
-        
+        public static bool IsImpossible(double b, double a)
+        {
+            bool risp = false;
+            if (b != 0 && a == 0)
+            {
+                risp = true;
+            }
+            return risp;
+        }
+            public static bool IsIndetermined(double b, double a)
+            {
+                bool risp = false;
+                if (b != 0 && a == 0)
+                {
+                    risp = true;
+                }
+
+
+                return risp;
+
+        }
+
     }
 }

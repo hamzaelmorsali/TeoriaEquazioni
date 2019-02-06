@@ -1,11 +1,11 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using EquazioniLibrary;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace EquazioniLibrary_test
+namespace Equazioni_Library_tests
 {
     [TestClass]
-    public class Equazioni_test
+    public class UnitTest1
     {
         [TestMethod]
         public void TestIsDetermined()
@@ -18,26 +18,26 @@ namespace EquazioniLibrary_test
         [TestMethod]
         public void TestIsDetermined1()
         {
-            double a = 0;
-            bool respattesa = false, resp = Equazioni.IsDetermined(a);
+            double a = 3;
+            bool respattesa = true, resp = Equazioni.IsDetermined(a);
             Assert.AreEqual(respattesa, resp);
 
         }
         [TestMethod]
         public void TestIsDetermined2()
         {
-            double a = -2;
+            double a = 3;
             bool respattesa = true, resp = Equazioni.IsDetermined(a);
             Assert.AreEqual(respattesa, resp);
+
         }
-        [TestMethod]
-        public void TestIsDetermined3()
+        public void TestIsIndetermined()
         {
-            double b = -2, a = 0;
-            bool respattesa = false, resp = Equazioni.IsImpossible(a,b);
+            double a = 3;
+            bool respattesa = true, resp = Equazioni.IsIndetermined(a,b);
             Assert.AreEqual(respattesa, resp);
+
         }
+
     }
 }
-    
-
